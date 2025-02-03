@@ -21,7 +21,7 @@ const generateRound = () => {
   const num1 = Math.floor(Math.random() * 100);
   const num2 = Math.floor(Math.random() * 100);
   const operator = operations[Math.floor(Math.random() * operations.length)];
-  
+
   const question = `${num1} ${operator} ${num2}`;
   const correctAnswer = String(calculate(num1, operator, num2));
 

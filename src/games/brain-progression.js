@@ -19,9 +19,9 @@ const generateRound = () => {
   const progression = getProgression(start, step, length);
   const correctAnswer = String(progression[hiddenIndex]);
   progression[hiddenIndex] = '..';
-  
+
   const question = progression.join(' ');
-  
+
   return [question, correctAnswer];
 };
 
